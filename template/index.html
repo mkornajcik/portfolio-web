@@ -1,0 +1,356 @@
+{% include "header.html" %}
+<div class="hero">
+    <div id="tsparticles"></div>
+    <div id="your-div"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script type="text/javascript">
+      // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
+      const options = {
+        fullScreen: {
+            enable: false
+        },
+        background: {
+          color: "#1a1a1a",
+        },
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "connect",
+            },
+          },
+          modes: {
+            "connect": {
+                "distance": 100,
+                "links": {
+                    "opacity": 0.2
+                },
+                "radius": 300
+      },
+          },
+        },
+        particles: {
+          move: {
+            enable: true, // this makes particles move
+            speed: { min: 0.1, max: 0.3 }, // this is the speed of the particles
+          },
+          opacity: {
+            value: { min: 0.3, max: 1 }, // this sets the opacity of the particles
+          },
+          size: {
+            value: { min: 0.5, max: 2 }, // this sets the size of the particles
+          },
+          number: {
+            value: 320,
+          },
+          color: {
+            value: [
+                "#76ABAE",
+                "#d1894a"
+                ]
+          },
+        },
+
+      };
+
+      // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
+      tsParticles.load("your-div", options);
+    </script>
+</div>
+
+<div class="overflow-hidden">
+<div class="index-container">
+    <h2 class=" drop-in">Hello, I'm</h2>
+    <div class="container drop-in">
+        <div class="stack " style="--stacks: 3;">
+            <span style="--index: 0;">MARKO</span>
+            <span style="--index: 1;">MARKO</span>
+            <span style="--index: 2;">MARKO</span>
+        </div>
+     </div>
+    <h2 class="drop-in">I'm a programmer.</h2>
+</div>
+</div>
+<div class="index-par overflow-hidden">
+    <div class="drop-in-2">
+        <div>
+            <p>Welcome to my portfolio! Here you'll find a showcase of my projects, skills, and experience in programming. Explore my work, learn about my journey, and discover how I can help bring your ideas to life with code.</p>
+        </div>
+    </div>
+</div>
+
+<div class="learn">
+    <a class="" href="#about">
+        <div class="learn-child  drop-in-2 glow-on-hover">
+            <p class="learn-text secondary-color ">Learn more ↓</p>
+        </div>
+    </a>
+</div>
+<div class="preload-image1"></div>
+<div class="preload-image2"></div>
+
+<nav class="nvb" id="nvbar">
+    <ul class="nvb-nav">
+        <li class="nav-link">
+            <a  href="#" class="menu" id="nav1">Home</a>
+        </li>
+        <li class="nav-link">
+            <a  href="#about" class="menu" id="nav2">About</a>
+        </li>
+        <li class="nav-link">
+            <a  href="#projects" class="menu" id="nav3">Projects</a>
+        </li>
+        <li class="nav-link">
+            <a href="#contact" class="menu" id="nav4">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="particles-container-noline">
+    <div id="tsparticles-noline"></div>
+    <div id="your-div-noline"></div>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script type="text/javascript">
+      const optionsnoline = {
+        fullScreen: {
+            enable: false
+        },
+        background: {
+          color: "#1a1a1a",
+        },
+        interactivity: {
+          events: {
+            onHover: {
+              enable: false,
+              mode: "connect",
+            },
+          },
+          modes: {
+            "connect": {
+                "distance": 100,
+                "links": {
+                    "opacity": 0.2
+                },
+                "radius": 300
+      },
+          },
+        },
+        particles: {
+          move: {
+            enable: true,
+            speed: { min: 0.1, max: 0.3 },
+          },
+          opacity: {
+            value: { min: 0.3, max: 1 },
+          },
+          size: {
+            value: { min: 0.5, max: 2 },
+          },
+          number: {
+            value: 50,
+          },
+          color: {
+            value: [
+                "#76ABAE",
+                "#d1894a"
+                ]
+          },
+        },
+      };
+
+      tsParticles.load("your-div-noline", optionsnoline);
+    </script>
+</div>
+
+<section href="about" id="about" class="section">
+    <br class="br-tn">
+<div class="mt">
+  <div class="container">
+    <div class="stack" style="--stacks: 3;">
+     <span style="--index: 0;">About</span>
+     <span style="--index: 1;">About</span>
+     <span style="--index: 2;">About</span>
+    </div>
+  </div>
+</div>
+
+<div class="techstack">
+    <div class='techstack-entry-l align-middle text-center'>
+        <h3 class="">Introduction</h3>
+            <p>I'm a lifelong learner with a deep passion for Python and programming.
+                When I'm not coding, you'll find me diving into the world of video games,
+                which fuels my creativity and problem-solving skills.
+            </p>
+    </div>
+
+    <div class="techstack-row">
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/html-small.png" alt="">
+            <div class="techstack-entry-text">HTML</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/github-small.png" alt="">
+            <div class="techstack-entry-text">GITHUB</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/django-small.png" alt="">
+            <div class="techstack-entry-text">DJANGO</div>
+        </div>
+    </div>
+    <div class="techstack-row">
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/python.png" alt="">
+            <div class="techstack-entry-textname">PYTHON</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/postgresql-small.png" alt="">
+            <div class="techstack-entry-text">POSTGRESQL</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/flask-small.png" alt="">
+            <div class="techstack-entry-text">FLASK</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/git.png" alt="">
+            <div class="techstack-entry-text">GIT</div>
+        </div>
+    </div>
+    <div class="techstack-row">
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/css-small.png" alt="">
+            <div class="techstack-entry-text">CSS</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/Django REST.png" alt="">
+            <div class="techstack-entry-text">Django REST</div>
+        </div>
+        <div class="techstack-entry">
+            <img class="mt-1" src="static/assets/img/bootstrap-small.png" alt="">
+            <div class="techstack-entry-text">BOOTSTRAP</div>
+        </div>
+    </div>
+
+    <div class='techstack-entry-r align-middle text-center'>
+      <h3>Skills</h3>
+          <p>
+            <b>Programming/Web Development:</b> Python, Django, Django REST Framework, Flask, Bootstrap, Requests, APIs, HTML, CSS, Git, GitHub.
+              <br class="br-tn">
+            <b>Data:</b> Pandas, Matplotlib, NumPy, Plotly, Seaborn.
+              <br class="br-tn">
+            <b>Database:</b> SQLite, PostgreSQL.
+              <br class="br-tn">
+            <b>Web Scraping:</b> Selenium, BeautifulSoup.
+              <br class="br-sm">
+            <u><b>And always learning</b></u>
+          </p>
+    </div>
+</div>
+
+<h2 class="text-center mt main-color">Background</h2>
+<br class="br-sm">
+<div class="d-flex justify-content-center">
+    <p class="text-center text-wrap nor-par">Ever since I was a kid, I've been immersed in the world of technology. My hobbies include video games, computer science, and programming.
+        I'm currently seeking opportunities where I
+        can contribute my expertise and continue to grow professionally.
+    </p>
+</div>
+</section>
+<section href="projects" id="projects" class="section">
+    <br class="br-tn">
+<div class="mt">
+  <div class="container">
+    <div class="stack" style="--stacks: 3;">
+     <span style="--index: 0;">Projects</span>
+     <span style="--index: 1;">Projects</span>
+     <span style="--index: 2;">Projects</span>
+    </div>
+  </div>
+</div>
+<br class="br-sm">
+<div class="text-center">
+    <h4 class="secondary-color">Titan Tech - Internet store website.</h4>
+    <div class="box mb-3">
+    </div>
+    <p class="text-center nor-par"><b>Technologies:</b> Python, Flask, SQLAlchemy, Jinja2, Bootstrap 5, HTML, CSS, JavaScript</p>
+    <p class="text-center nor-par"><b>Key Features:</b> User Authentication, Dynamic Content Rendering, Shopping Cart, Checkout, SEO Friendly</p>
+    <p class="text-center nor-par"><b>Objective:</b> My goal is to showcase my development skills, and to demonstrate my ability to build and deploy
+        web applications.
+    </p>
+    <div class="hover-title">
+        <h4 class="secondary-color"><u class="secondary-color">Preview</u></h4>
+    </div>
+    <div class="hover-image">
+        <img class="project-preview" src="static/assets/img/website-preview-gif.gif">
+    </div>
+    <a href="https://github.com/mkornajcik/titatech-webapp" target="_blank">
+        <h4 class="main-color"><u class="main-color">View on GitHub</u></h4>
+    </a>
+</div>
+<hr>
+<div class="text-center mt-5">
+    <h4 class="secondary-color">TaskList - Web to-do list manager.</h4>
+    <div class="box mb-3"></div>
+    <p class="text-center nor-par"><b>Technologies:</b> Python, Django, PostgreSQL, Jinja2, Bootstrap 5, HTML, CSS, JavaScript, Railway</p>
+    <p class="text-center nor-par"><b>Key Features:</b> User Authentication, Task Management, Progress Tracking</p>
+    <p class="text-center nor-par"><b>Objective:</b> The primary aim of this project is to serve as a learning project to understand the Django Framework.
+        It focuses on exploring Django's features such as form handling, authentication and environment variable management, alongside the deployment process using Railway and PostgreSQL.
+    </p>
+
+        <div class="hover-title">
+            <h4 class="secondary-color"><u class="secondary-color">Preview</u></h4>
+        </div>
+        <div class="hover-image">
+            <img class="project-preview" src="static/assets/img/preview-gif.gif">
+        </div>
+    <a href="https://github.com/mkornajcik/tasklist" target="_blank">
+        <h4 class="main-color"><u class="main-color">View on GitHub</u></h4>
+    </a>
+</div>
+<hr>
+<div class="text-center mt-5">
+    <h4 class="secondary-color">Django API - A fully functional backend REST API.</h4>
+    <div class="box mb-3"></div>
+    <p class="text-center nor-par"><b>Technologies:</b> Python, Django REST Framework, Postman</p>
+    <p class="text-center nor-par"><b>Key Features:</b> User Authentication, Advanced User Authentication (Token-Based and JWT), Custom Permissions, Throttling and Pagination</p>
+    <p class="text-center nor-par"><b>Objective:</b> This project covers everything from the basics of REST API development to advanced features such as permissions, throttling, pagination, filtering, and authentication, including token-based and JWT authentication. The goal is to provide a comprehensive understanding of Django REST Framework while building a fully functional backend API.</p>
+    <a href="https://github.com/mkornajcik/django-api" target="_blank">
+        <h4 class="main-color"><u class="main-color">View on GitHub</u></h4>
+    </a>
+</div>
+<hr>
+<div class="text-center mt-5">
+    <div class="container ">
+        <h4 class="main-color">You can find more of my projects on GitHub!</h4>
+        <a href="https://github.com/mkornajcik" target="_blank">
+            <img class="mb-3 img-git" src="static/assets/img/GitHub-logo.png" width="100" height="100">
+        </a>
+    </div>
+</div>
+</section>
+<section href="contact" id="contact" class="section">
+    <br class="br-tn">
+<div class="mt">
+  <div class="container">
+    <div class="stack" style="--stacks: 3;">
+     <span style="--index: 0;">Contact</span>
+     <span style="--index: 1;">Contact</span>
+     <span style="--index: 2;">Contact</span>
+    </div>
+  </div>
+</div>
+<p class="text-center nor-par">I'm always excited to connect and explore new opportunities, so feel free to reach out!</p>
+<div class="text-center">
+    <div class="container ">
+        <a href="https://www.linkedin.com/in/marko-kornajcik-2312131b3/" target="_blank">
+            <img class="mb-3 img-linkedin" src="static/assets/img/linkedin.png" width="200" height="100">
+        </a>
+    </div>
+</div>
+<form action="https://formspree.io/f/mvgpoevy" method="POST">
+    <input class="center-block input-field" type="text" name="name" placeholder="Name" required>
+    <input class="center-block input-field" type="email" name="email" placeholder="Email" required>
+    <textarea class="center-block input-message" name="message" placeholder="Message" required></textarea>
+    <button class="center-block contact-button" type="submit">Send</button>
+</form>
+</section>
+{% include "footer.html" %}
