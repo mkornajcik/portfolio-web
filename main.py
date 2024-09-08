@@ -4,12 +4,14 @@ from flask_bootstrap import Bootstrap5
 from flask_ckeditor import CKEditor
 import os
 
-app = Flask(__name__, template_folder='template')
-app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
+app = Flask(__name__, template_folder="template")
+app.config["SECRET_KEY"] = os.environ["SECRET_KEY"]
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
 color = "#f04752"
+
+
 @app.route("/")
 def home():
     return render_template("index.html")
