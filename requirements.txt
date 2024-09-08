@@ -1,3 +1,4 @@
+bleach==6.1.0
 blinker==1.8.2
 Bootstrap-Flask==2.4.0
 click==8.1.7
@@ -9,5 +10,7 @@ itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
 packaging==24.1
+six==1.16.0
+webencodings==0.5.1
 Werkzeug==3.0.4
 WTForms==3.1.2
